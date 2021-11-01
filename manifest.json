@@ -1,0 +1,35 @@
+{
+
+  "manifest_version": 2,
+  "name": "Audio Output Selector",
+  "description": "Change your tab's audio output device.",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "56.0a1",
+			"id": "d75a591778e2db024f06780c0c1b8ccc01a17eff@temporary-addon"
+    }
+  },
+	
+	"content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+	
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "permissions": [
+    "menus",
+    "activeTab"
+  ],
+  
+  "icons": {
+    "16": "icons/speaker-filled-audio-tool-16.png",
+    "32": "icons/speaker-filled-audio-tool-32.png"
+  }
+
+}
