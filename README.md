@@ -1,6 +1,4 @@
 # Audio-Output-Selector
-
-## Description
 Change audio output device for individual tabs in Firefox.
 
 ## Usage
